@@ -1,9 +1,9 @@
 {
-  "name": "@long260398/envguard",
+  "name": "envpatch",
   "version": "0.1.0",
   "description": "CLI tool to validate, diff, and sync .env files against .env.example",
   "bin": {
-    "envguard": "bin/envx.js"
+    "envpatch": "bin/envx.js"
   },
   "main": "./dist/index.js",
   "scripts": {
