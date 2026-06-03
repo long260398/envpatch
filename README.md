@@ -2,7 +2,7 @@
 
 > Never deploy with a broken `.env` again — validate, diff, and sync environment files in one command.
 
-[![CI](https://github.com/long260398/envx/actions/workflows/ci.yml/badge.svg)](https://github.com/long260398/envx/actions/workflows/ci.yml)
+[![CI](https://github.com/long260398/envpatch/actions/workflows/ci.yml/badge.svg)](https://github.com/long260398/envpatch/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/envpatch.svg)](https://www.npmjs.com/package/envpatch)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](https://nodejs.org)
