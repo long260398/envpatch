@@ -9,6 +9,8 @@
 
 ## Demo
 
+![Demo](./demo.gif)
+
 ```
 $ envpatch check
 
