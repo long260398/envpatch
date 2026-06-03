@@ -1,6 +1,6 @@
 {
   "name": "envpatch",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "CLI tool to validate, diff, and sync .env files against .env.example",
   "bin": {
     "envpatch": "bin/envx.js"

@@ -64,6 +64,12 @@ npx envpatch check
 ## Usage
 
 ```bash
+# Create .env from .env.example (replaces: cp .env.example .env)
+envpatch init
+
+# Create with a custom output name
+envpatch init --out .env.staging
+
 # Check for missing or empty keys
 envpatch check
 

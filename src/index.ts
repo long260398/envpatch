@@ -2,6 +2,7 @@ import { Command } from 'commander';
 import { check } from './check';
 import { diff } from './diff';
 import { sync } from './sync';
+import { init } from './init';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { version } = require('../package.json') as { version: string };
@@ -40,6 +41,15 @@ program
   .option('--dry-run', 'Preview changes without writing', false)
   .action((opts: { env: string; example: string; dryRun: boolean }) => {
     sync(opts.env, opts.example, opts.dryRun);
+  });
+
+program
+  .command('init')
+  .description('Create .env from .env.example')
+  .option('--example <path>', '.env.example file path', '.env.example')
+  .option('--out <path>', 'output file path', '.env')
+  .action((opts: { example: string; out: string }) => {
+    init(opts.example, opts.out);
   });
 
 program.parse();
