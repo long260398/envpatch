@@ -3,7 +3,7 @@
 > Never deploy with a broken `.env` again — validate, diff, and sync environment files in one command.
 
 [![CI](https://github.com/long260398/envx/actions/workflows/ci.yml/badge.svg)](https://github.com/long260398/envx/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/envx.svg)](https://www.npmjs.com/package/envx)
+[![npm version](https://img.shields.io/npm/v/%40long260398%2Fenvx.svg)](https://www.npmjs.com/package/@long260398/envx)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](https://nodejs.org)
 
@@ -50,13 +50,13 @@ $ envx check
 ### Install globally
 
 ```bash
-npm install -g envx
+npm install -g @long260398/envx
 ```
 
 ### Or run without installing
 
 ```bash
-npx envx check
+npx @long260398/envx check
 ```
 
 ## Usage
@@ -83,7 +83,7 @@ envx diff  --env .env.staging --example .env.staging.example
 
 ```yaml
 # GitHub Actions — fail the build if .env is out of sync
-- run: npx envx check
+- run: npx @long260398/envx check
 ```
 
 ### In package.json scripts

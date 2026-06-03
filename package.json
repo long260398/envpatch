@@ -1,9 +1,9 @@
 {
-  "name": "envx",
+  "name": "@long260398/envx",
   "version": "0.1.0",
   "description": "CLI tool to validate, diff, and sync .env files against .env.example",
   "bin": {
-    "envx": "./bin/envx.js"
+    "envx": "bin/envx.js"
   },
   "main": "./dist/index.js",
   "scripts": {
