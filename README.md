@@ -1,16 +1,16 @@
-# envx
+# envguard
 
 > Never deploy with a broken `.env` again — validate, diff, and sync environment files in one command.
 
 [![CI](https://github.com/long260398/envx/actions/workflows/ci.yml/badge.svg)](https://github.com/long260398/envx/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/%40long260398%2Fenvx.svg)](https://www.npmjs.com/package/@long260398/envx)
+[![npm version](https://img.shields.io/npm/v/%40long260398%2Fenvguard.svg)](https://www.npmjs.com/package/@long260398/envguard)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](https://nodejs.org)
 
 ## Demo
 
 ```
-$ envx check
+$ envguard check
 
 ✗ Missing keys (2):
   - DATABASE_URL
@@ -21,13 +21,13 @@ $ envx check
 
 3 issues found
 
-$ envx sync
+$ envguard sync
 
 Added 2 keys to .env:
   + DATABASE_URL=
   + REDIS_URL=
 
-$ envx check
+$ envguard check
 
 ✓ .env is valid
 ```
@@ -50,40 +50,40 @@ $ envx check
 ### Install globally
 
 ```bash
-npm install -g @long260398/envx
+npm install -g @long260398/envguard
 ```
 
 ### Or run without installing
 
 ```bash
-npx @long260398/envx check
+npx @long260398/envguard check
 ```
 
 ## Usage
 
 ```bash
 # Check for missing or empty keys
-envx check
+envguard check
 
 # Show a visual diff
-envx diff
+envguard diff
 
 # Add missing keys from .env.example to .env
-envx sync
+envguard sync
 
 # Preview sync without writing
-envx sync --dry-run
+envguard sync --dry-run
 
 # Use custom file paths
-envx check --env .env.staging --example .env.example
-envx diff  --env .env.staging --example .env.staging.example
+envguard check --env .env.staging --example .env.example
+envguard diff  --env .env.staging --example .env.staging.example
 ```
 
 ### In CI pipelines
 
 ```yaml
 # GitHub Actions — fail the build if .env is out of sync
-- run: npx @long260398/envx check
+- run: npx @long260398/envguard check
 ```
 
 ### In package.json scripts
@@ -91,9 +91,9 @@ envx diff  --env .env.staging --example .env.staging.example
 ```json
 {
   "scripts": {
-    "env:check": "envx check",
-    "env:sync": "envx sync --dry-run",
-    "predev": "envx check"
+    "env:check": "envguard check",
+    "env:sync": "envguard sync --dry-run",
+    "predev": "envguard check"
   }
 }
 ```
@@ -117,4 +117,4 @@ Pull requests are welcome. For major changes, open an issue first to discuss wha
 
 ## Support
 
-If envx saves you from a broken deploy, consider [sponsoring on GitHub](https://github.com/sponsors/long260398).
+If envguard saves you from a broken deploy, consider [sponsoring on GitHub](https://github.com/sponsors/long260398).
