@@ -1,11 +1,15 @@
 {
   "name": "envpatch",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "CLI tool to validate, diff, and sync .env files against .env.example",
   "bin": {
     "envpatch": "bin/envx.js"
   },
   "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "bin"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "ts-node src/index.ts",
